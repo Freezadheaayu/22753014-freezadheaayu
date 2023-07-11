@@ -1,0 +1,144 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="freeza.css" />
+    <title>Web | Portofolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <nav>
+          <ul>
+          </ul>
+        </nav>
+      </div>
+      <main class="content">
+        <section class="hero">
+          <img src="html-css-removebg-preview.png" alt="" />
+          <div class="hero-content">
+            <br /><br />
+            <h3>HTML</h3>
+            <p>
+                HTML merupakan sesuatu yang berada di balik layar tampilan halaman web 
+                yang sehari-hari diakses oleh pengguna. Tanpa kehadiran HTML, tampilan
+                web tentunya akan berantakan. Lalu, CSS dan HTML memiliki keterikatan
+                satu sama lain. CSS merupakan kode-kode yang dipakai untuk mendesain 
+                halaman HTML.
+            </p>
+            <p>
+                secara umum kita dapat mengartikan HTML sebagai bahasa untuk menggambarkan 
+                struktur halaman situs, sedangkan CSS merupakan bahasa untuk menggambarkan
+                halaman situs, termasuk warna, tata letak, dan font
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+
+* {
+    margin: 0;
+    padding: 10px;
+  }
+   
+  body {
+    background-color: #5ca3c6;
+    font-family: sans-serif;
+  }
+   
+  .content {
+    grid-area: content;
+  }
+  body {
+
+    background-image : url("ejaaa.jpg");
+    background-color : #cccccc;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    }
+   
+  .footer {
+    grid-area: footer;
+    background: white;
+  }
+   
+  .container {
+    font-size: 1em;
+    margin: 50px;
+    width: 100%;
+    height: 100;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'sidebar' 'content' 'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 800px 250px;
+  }
+   
+  .content,
+  .sidebar,
+  .footer {
+    padding: 1em;
+  }
+   
+  nav ul {
+    margin: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+   
+  nav li {
+    list-style: none;
+    padding: 1em 0;
+  }
+   
+  nav li a {
+    color: white;
+    font-weight: 500;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+   
+  nav li a:hover {
+    opacity: 1;
+  }
+   
+  .hero {
+    max-width: 90 px;
+    margin: 0 auto;
+    text-align: center;
+  }
+   
+  .hero img {
+    width: 400px;
+  }
+   
+  .hero h1 {
+    font-size: 2em;
+    font-weight: 300;
+    color: #332e3d;
+  }
+   
+  .hero p {
+    font-weight: 300;
+    line-height: 1.3em;
+    color: #202223;
+  }
+   
+  .action-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(26, 25, 25);
+    font-weight: 700;
+    background: #567bfb;
+    padding: 0.5em 1em;
+    border-radius: 60px;
+    margin: 1em 0;
+    transition: 0.3s;
+  }
+   
